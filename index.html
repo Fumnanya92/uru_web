@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>URU Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --ink: #1c1a17;
+    --ink-soft: #55504a;
+    --border: #e8e4de;
+    --accent: #1f6f4f;
+    --accent-soft: #e6f2ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15130f;
+      --surface: #1d1a15;
+      --ink: #f1ede6;
+      --ink-soft: #b9b2a7;
+      --border: #332e26;
+      --accent: #4fb384;
+      --accent-soft: #1e2e26;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { margin-bottom: 40px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--accent);
+    background: var(--accent-soft); border-radius: 999px; padding: 6px 14px;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 600; margin: 0 0 8px; }
+  .updated { color: var(--ink-soft); font-size: 14px; margin: 0; }
+  .lede { font-size: 17px; color: var(--ink-soft); margin-top: 20px; max-width: 60ch; }
+  section { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+  h2 { font-size: 21px; font-weight: 600; margin: 0 0 14px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 0 0 14px; }
+  .card h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin: 0 0 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--ink-soft); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Privacy Policy</span>
+    <h1>Your data, plainly explained</h1>
+    <p class="updated">Effective date: September 25, 2026</p>
+    <p class="lede">
+      URU is a business-management app for laundry, fashion, and retail
+      businesses, covering order tracking, customer records, sales, and
+      payments, run by the business owner and their staff. This page
+      explains what information URU collects, why, and how it's handled.
+    </p>
+  </header>
+
+  <section>
+    <h2>Who this applies to</h2>
+    <p>
+      URU is used by business owners and their staff to run day-to-day
+      operations. This policy covers both the account holder who signs up
+      their business, and any staff member invited to use the app under
+      that business. It also covers the customer records a business enters
+      into URU about the people they serve.
+    </p>
+  </section>
+
+  <section>
+    <h2>What we collect</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Account and staff</h3>
+        <p style="margin:0">Full name, phone number, email address, and role (Owner, Manager, or Staff) for anyone who signs in.</p>
+      </div>
+      <div class="card">
+        <h3>Business details</h3>
+        <p style="margin:0">Business name, address, phone number, logo, and the products or services you sell.</p>
+      </div>
+      <div class="card">
+        <h3>Customer records</h3>
+        <p style="margin:0">Name, phone, email, address, and any notes a business chooses to enter about their own customers.</p>
+      </div>
+      <div class="card">
+        <h3>Orders and payments</h3>
+        <p style="margin:0">Order details, item photos, sale amounts, payment method, and payment status recorded through the app.</p>
+      </div>
+      <div class="card">
+        <h3>Photos</h3>
+        <p style="margin:0">Business logo and product photos you choose to take or upload. Nothing is accessed from your camera or photo library without you selecting it.</p>
+      </div>
+      <div class="card">
+        <h3>Device permissions</h3>
+        <p style="margin:0">Camera and photo library for the photos above, and, if you enable it, a floating on-screen bubble for quick sale entry (which requires a foreground service permission on Android to keep running while you use other apps).</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We don't run advertising or install analytics or tracking SDKs in the app.</li>
+      <li>We don't sell or rent any business or customer data to third parties.</li>
+      <li>We don't access your contacts or location.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who processes your data</h2>
+    <p>Data is handled by a small number of service providers, each doing one specific job:</p>
+    <ul>
+      <li><strong>Supabase</strong>, which hosts the app's database, authentication, and file storage (photos, business logos).</li>
+      <li><strong>Paystack</strong>, which processes online card and bank payments when a business enables that option. Card numbers are entered directly with Paystack and never pass through URU's own servers.</li>
+      <li><strong>Brevo</strong>, which sends transactional emails (order confirmations, receipts) on a business's behalf, when that feature is enabled.</li>
+    </ul>
+    <p>None of these providers use your data for their own marketing or resell it.</p>
+  </section>
+
+  <section>
+    <h2>How long we keep data</h2>
+    <p>
+      Business, staff, customer, and order data is kept for as long as the
+      business's account is active. If a business closes its account, its
+      data is deleted from active systems within 30 days, aside from
+      records we're legally required to retain for financial or tax
+      purposes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your choices</h2>
+    <ul>
+      <li>Staff and business owners can review and correct their own account details at any time inside the app.</li>
+      <li>A business owner can request export or deletion of their business's data by contacting us below.</li>
+      <li>Camera and photo library access can be revoked at any time from your device's settings. The app will simply be unable to take or attach photos until re-enabled.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>
+      URU is a business tool and is not directed at, or knowingly used by,
+      children under 13.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes in a material way, we'll update the effective
+      date above and, where required, notify account holders in the app.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or your data can be sent to
+      <a href="mailto:fumnanya541@gmail.com">fumnanya541@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    URU, laundry, fashion, and retail management.
+  </footer>
+</div>
+</body>
+</html>
